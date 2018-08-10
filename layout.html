@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DeveloperDeck101</title>
+    <style>
+        /* style the body */
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        /* header */
+
+        .header {
+            padding: 50px;
+            text-align: center;
+            background: dodgerblue;
+            color: white
+        }
+
+        /*navbar*/
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /* links bonitinhos */
+
+        .navbar a {
+            color: white;
+            padding: 10px 150px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: dodgerblue;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 20;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 15px;
+        }
+
+        .img1 {
+            width: 100%;
+            padding: 0px;
+        }
+        .img2 {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 25px;
+            text-align: center;
+            background-color: #ddd;
+        }
+
+        @media screen and (max-width: 700px){
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Meu Primeiro Layout</h1>
+        <p>com
+            <strong>DeveloerDeck101</strong>
+        </p>
+    </div>
+
+    <!-- Navigation  -->
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <!--   Grid do Website -->
+    <div class="row">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <h2>Sobre você</h2>
+            <h5>Algum texto</h5>
+            <img class="img1" src="./imgs/aboutme.jpg" />
+            <p>blah blah blah</p>
+        </div>
+
+        <!-- main area -->
+        <div class="main">
+            <h2>Pedindo seu like no vídeo!</h2>
+            <img class="img2" src="./imgs/title_head.jpg" />
+            <h2>Pedindo para vc se inscrever e ativar as notificações.</h2>
+            <img class="img2" src="./imgs/title_head.jpg" />
+        </div>
+
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <h3>Lembro você de compartilhar os vídeos na sua rede social, de preferência compartilhar uma playlist!</h3>
+    </div>
+</body>
+
+</html>
